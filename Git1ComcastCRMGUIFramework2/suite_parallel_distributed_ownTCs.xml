@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+
+<listeners>
+   <listener class-name="com.comcast.crm.listenerutility.ListenerImplementationClass"/>
+</listeners>
+
+  <test name="Test_Document_Lead">
+     <classes>
+      <class name="com.comcast.crm.documenttest.CreateDocumentWithPOMWithAnnotation_Assertion"/>
+      <class name="com.comcast.crm.leadtest.CreateLeadWithPOMWithAnnotation_Assertion"/>
+    </classes>
+  </test>
+  
+  <test name="Test_TroubleTicket_Vendor">
+    <classes> 
+      <class name="com.comcast.crm.troubletickettest.CreateTroubleTicketWithPOMWithAnnotation_Assertion"/>
+      <class name="com.comcast.crm.vendortest.CreateVendorWithPOMWithAnnotation_Assertion"/>
+    </classes>
+  </test>
+  
+  <test name="Test_Opportunity_Product">
+  	<classes>
+      <class name="com.comcast.crm.opportunitytest.CreateOpportunityWithPOMWithAnnotation_Assertion"/>
+      <class name="com.comcast.crm.producttest.CreateProductWithPOMWithAnnotation_Assertion"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
