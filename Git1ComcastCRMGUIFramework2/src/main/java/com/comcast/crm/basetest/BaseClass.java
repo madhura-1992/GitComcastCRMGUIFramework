@@ -40,6 +40,7 @@ public class BaseClass {
 		Reporter.log("==Connect to DB, Report Config==",true);
 		dLib.getDbConnection();	
 		System.out.println("Hello");
+		System.out.println("Hi");
 	}
 	
 	//@Parameters("BROWSER")
