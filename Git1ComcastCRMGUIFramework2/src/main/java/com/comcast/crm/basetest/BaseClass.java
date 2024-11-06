@@ -39,6 +39,7 @@ public class BaseClass {
 	public void configBS() throws SQLException {
 		Reporter.log("==Connect to DB, Report Config==",true);
 		dLib.getDbConnection();	
+		System.out.println("Hello");
 	}
 	
 	//@Parameters("BROWSER")
